@@ -1,0 +1,4 @@
+cc
+-I.
+-std=c++2b
+-fno-exceptions
