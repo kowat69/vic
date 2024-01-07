@@ -32,10 +32,11 @@ int main(int argc, char* argv[]){
         contents_stream << input.rdbuf();
         contents = contents_stream.str();
     }
+    Error err(contents);
     Tokenizer tokenizer(contents);
     std::vector<Token> tokens = tokenizer.tokenize();
     
-    Parser parser(tokens);
+    Parser parser(tokens, err);
     my::oblate<NodeProg> program = parser.parse();
 
     Generator generator(program);

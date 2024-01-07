@@ -1,5 +1,5 @@
 generation.o: generation.cpp generation.hpp parser.hpp stdafx.hpp \
-  nameof.hpp tokenization.hpp oblate.hpp
+  nameof.hpp tokenization.hpp oblate.hpp error.hpp
 
 generation.hpp:
 
@@ -12,3 +12,5 @@ nameof.hpp:
 tokenization.hpp:
 
 oblate.hpp:
+
+error.hpp:
