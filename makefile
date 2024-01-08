@@ -29,6 +29,9 @@ clean:
 .PHONY: test
 test: all
 	bin/vic.exe test.vi
+.PHONY: testclean
+testclean:
+	del test.obj test.asm test.exe
 
 
 -include $(DEPS) # include "ファイル名" でそのファイルの内容をここにコピペしたのと同じ効果を得られる

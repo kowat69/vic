@@ -17,7 +17,12 @@ pop rax
 add rax, rcx
 push rax
 push 64
-push 42
+push 0
+push 23
+pop rcx
+pop rax
+sub rax, rcx
+push rax
 pop rcx
 pop rax
 imul rax, rcx
